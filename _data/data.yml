@@ -177,7 +177,7 @@ publications:
     papers:
       - title: "A formally verified NAT"
         pdf: https://vignat.github.io/vignat-paper.pdf
-        slides: http://conferences.sigcomm.org/sigcomm/2017/files/program/ts-4-1-VigNAT.pdf
+        slides: assets/documents/vignat-slides.pdf
         video: https://pedrosa.2y.net/Publications/vignat.mp4
         code: https://github.com/vignat/vignat
         poster: assets/documents/Vigor-EDICOH19-poster.pdf
@@ -202,11 +202,11 @@ publications:
           We then demonstrate that formally proven correctness in this case does not come at the cost of performance
 
       - title: "Automated synthesis of adversarial workloads for network functions"
-        pdf: https://pedrosa.2y.net/Publications/castan.pdf
-        slides: http://conferences.sigcomm.org/sigcomm/2018/files/slides/paper_7.2.pdf
+        pdf: assets/documents/castan.pdf
+        slides: assets/documents/castan-slides.pdf
         video: https://pedrosa.2y.net/Publications/castan-sigcomm-talk.mp4
         code: https://github.com/nal-epfl/castan
-        poster: https://pedrosa.2y.net/Projects/CASTAN/Poster.png
+        poster: assets/documents/castan-poster.png
         conflink: http://conferences.sigcomm.org/sigcomm/2018/program.html
         link: https://pedrosa.2y.net/Projects/CASTAN
         authors: Luis Pedrosa, Rishabh Iyer, <u>Arseniy Zaostrovnykh</u>, Jonas Fietz, Katerina Argyraki
@@ -226,8 +226,8 @@ publications:
           We used our tool on 11 network functions that implement a variety of data structures and discovered workloads that can in some cases triple latency and cut throughput by 19% relative to typical testing workloads.
 
       - title: "A formally verified NAT stack"
-        pdf: http://dslab.epfl.ch/pubs/formally-verified-nat-stack.pdf
-        slides: http://conferences.sigcomm.org/sigcomm/2018/files/slides/kbnet/paper_1.2.pptx 
+        pdf: assets/documents/formally-verified-nat-stack.pdf
+        slides: assets/documents/formally-verified-nat-stack-slides.pptx
         video: https://www.youtube.com/watch?v=esfwD46f2ZI&feature=youtu.be
         code: https://github.com/vignat/vignat/tree/kbnets18
         poster: assets/documents/VigNATStack-EDICOH18-poster.pdf
@@ -245,11 +245,11 @@ publications:
           We uncover bugs in both the framework and the driver.
 
       - title: "Performance contracts for software network functions"
-        pdf: http://dslab.epfl.ch/pubs/bolt.pdf
-        slides: https://www.usenix.org/sites/default/files/conference/protected-files/nsdi19_slides_iyer.pdf
+        pdf: assets/documents/bolt.pdf
+        slides: assets/documents/bolt-slides.pdf
         video: https://www.youtube.com/watch?v=cV8pCGiTxgQ
         code: https://github.com/bolt-perf-contracts/bolt
-        poster: https://pedrosa.2y.net/Projects/Bolt/Poster.png
+        poster: assets/documents/bolt-poster.png
         conflink: https://www.usenix.org/conference/nsdi19/technical-sessions
         link: https://pedrosa.2y.net/Projects/Bolt
         authors: Rishabh Iyer, Luis Pedrosa, <u>Arseniy Zaostrovnykh</u>, Solal Pirelli, Katerina Argyraki, George Candea

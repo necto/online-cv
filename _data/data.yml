@@ -41,10 +41,16 @@ sidebar:
         level: Beginner
 
     interests:
-      - item: Acrobatic rock-n-roll
+      - item: Programming Languages
+        link:
+
+      - item: Formal Methods
+        link:
+
+      - item: Acrobatic Rock-N-Roll
         link: https://rockdancecompany.ch
 
-      - item: Theatrical improvisation
+      - item: Theatrical Improvisation
         link:
 
       - item: Biking, Climbing, Swimming, Parkour

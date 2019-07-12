@@ -1,0 +1,36 @@
+\documentclass{proc}
+
+\title{Projects participation overview}
+\author{Arseniy Zaostrovnykh\\
+ \url{mailto:necto@frtk.ru}}
+\date{\today}
+
+\usepackage[colorlinks=true]{hyperref}
+\pagestyle{empty}% no page numbers
+
+\begin{document}
+\maketitle
+
+\section*{Runningram}
+\url{https://code.google.com/p/runningram/}\\
+A student project, for my second year. The 2d isometric arcade game based on SDL. The game has a basic physical model for cars as systems of two wheel sets with a friction, dependent on the direction for each wheel set. Also it exploits a non-isotropic pulse-based damage model. It can be run both in single-machine, hot-seat, and in a network, client-server modes. The game can be built in different Linux distributions, but network mode isn't so cross-platform, and requires the same architecture properties, like little/big-endian, sizeof(int), etc. Also it has quite fair collision detection for car-to-car and car-to-obstacle cases, considering it's shape. Also it has a fully handwritten terminal with ECL interpreter, acting in it. The ECL interpreter is also used for robots (bots), but it lacks a sufficient API.
+
+I was the team leader/primary developer of the project (necto.ne is my nickname). I've written all the features, described above (except for the isometry-transformation).
+
+\section*{Natty}
+\url{https://github.com/necto/natty}\\
+Another student project, for Java EE elective course. The GWT-based on-line music search and listening application. It was a solution for browsing and listening music in our campus local network. It consists of two parts: a network scanner for music files published locally on samba servers, and a user web-interface for searching and listening them. They ran separately, and interact through a postgresql database.
+
+I implemented the web interface, using GWT and Java persistence API. You can see my contribution under the 'necto' nickname.
+
+\section*{Optimizing binary translation system for a new parallel architecture}
+It is a big (relatively to my experience) RnD project for a new architecture, which is being developed by our hardware people in tight collaboration with us (a compiler team). The project had lasted for several years, using an engine, inherited from older times, but it still functions and evolves. It features a small, light hardware and a strong aggressively optimizing and paralleling binary translator. In current stage it is static and offline, but it aims to be a dynamic, multi-gear system like the one in Transmeta. The system will look like x86 from outside, and will be extremely different from the inside. The size is in 724 source files, more than million LOC. I can't tell much, because it is still classified.
+My part is, certainly, comparatively small.
+
+One part is a parallel CFG dumps, factored with the serial one.
+Another part is a static analysis of operation criticality based on som heuristics, attempt to exploit it during register allocation.
+The final contribution, apart from some infrastructure work) an optimization for x87 floating-point operations.
+
+\section*{Others}
+ You can also browse my other projects on \url{https://github.com/necto} and \url{https://code.google.com/u/necto.ne@gmail.com/} .
+\end{document}

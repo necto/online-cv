@@ -1,0 +1,57 @@
+
+\usepackage{etex}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{multicol}
+\usepackage{graphicx} %% [dvips] causes tikz library fault
+\usepackage{nameref}
+\usepackage{mathtools}
+\usepackage{tikz}
+\usepackage{color}
+\usepackage{geometry}
+\usepackage{boolexpr}
+\usepackage{epigraph}
+\usepackage{wrapfig}
+\usepackage{gnuplot-lua-tikz}
+\usepackage{relsize}
+\usepackage{comment}
+\usepackage[normalem]{ulem}
+\usetikzlibrary{matrix}
+\usetikzlibrary{chains}
+\usetikzlibrary{decorations}
+\usetikzlibrary{shapes.misc}
+\usetikzlibrary{patterns}
+\usepgflibrary{decorations.pathreplacing}
+
+
+\newcommand*{\defeq}{\stackrel{\text{def}}{=}}
+\newcommand{\todo}[1]{\textcolor{red}{TODO: #1}}
+
+\newcommand*{\ld}[2]{\textbf{ld}\ #1\gets \$#2}
+\newcommand*{\st}[2]{\textbf{st}\ #1\to \$#2}
+\newcommand*{\pd}[2]{\textbf{pd}\ #1 = #2}
+\newcommand*{\br}[1]{\textbf{br}\ #1}
+\newcommand*{\cmp}[1]{\textbf{cmp}\ #1}
+\newcommand*{\add}[2]{\textbf{add}\ #1\gets #2}
+\newcommand*{\sub}[2]{\textbf{sub}\ #1\gets #2}
+\newcommand*{\mul}[2]{\textbf{mul}\ #1\gets #2}
+\newcommand*{\mov}[2]{\textbf{mv}\ #1\gets #2}
+\newcommand*{\inc}[1]{\textbf{inc}\ #1}
+\newcommand*{\brz}[2]{\textbf{br}\ #1=0\ \$#2}
+\newcommand*{\brnz}[2]{\textbf{br}\ #1\neq0\ \$#2}
+
+
+\def\regular{(0)}
+\def\relevant{(1)}
+\def\precision{(2)}
+\def\errorf{(3)}
+\def\recall{(4)}
+
+\pgfdeclarepatternformonly{wide north west lines}{\pgfqpoint{-1pt}{-1pt}}{\pgfqpoint{7pt}{7pt}}{\pgfqpoint{6pt}{6pt}}%
+{
+  \pgfsetlinewidth{2pt}
+  \pgfpathmoveto{\pgfqpoint{0pt}{6pt}}
+  \pgfpathlineto{\pgfqpoint{6.1pt}{-0.1pt}}
+  \pgfusepath{stroke}
+}
+

@@ -16,7 +16,7 @@ sidebar:
       user: arseniy.zaostrovnykh
       domain: epfl.ch
     address:
-      text: INN 331, IC, EPFL, Switzerland
+      text: INN 331, Station 14, 1015 Lausanne, EPFL, Switzerland
       link: https://plan.epfl.ch/?room==INN%20331
     #phone: 012 345 6789
     #website: necto.github.com
@@ -148,7 +148,7 @@ experiences:
 
 
 projects:
-    title: Projects
+    title: Selected Projects
     intro: >
       Here are some of my side and study projects. Visit my [GitHub](https://github.com/necto)
       page for more.
@@ -190,7 +190,7 @@ publications:
 
       - title: "A formally verified NAT stack"
         authors: Solal Pirelli, <u>Arseniy Zaostrovnykh</u>, George Candea
-        conference: "ACM SIGCOMM, Workshop on Kernel Bypassing Networks, 2018"
+        conference: "ACM SIGCOMM, KBNets (<b>Best Paper Award</b>), 2018"
 
       - title: "Performance contracts for software network functions"
         authors: Rishabh Iyer, Luis Pedrosa, <u>Arseniy Zaostrovnykh</u>, Solal Pirelli, Katerina Argyraki, George Candea

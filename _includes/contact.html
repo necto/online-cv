@@ -18,12 +18,6 @@
     </li>
     {% endif %}
 
-    {% if sidebar.address %}
-    <li class="address"><i class="fas fa-map-marked-alt"></i>
-        <a href="{{ sidebar.address.link }}">{{ sidebar.address.text }}</a>
-    </li>
-    {% endif %}
-
     {% if sidebar.website %}
     <li class="website"><i class="fas fa-globe-americas"></i>
       <a href="http://{{ sidebar.website }}" target="_blank">{{ sidebar.website }}</a>
@@ -81,6 +75,12 @@
     {% if sidebar.google-scholar %}
     <li class="google-scholar"><i class="fas fa-user-graduate"></i>
         <a href="https://scholar.google.ch/citations?user={{ sidebar.google-scholar }}" target="_blank">Google Scholar</a>
+    </li>
+    {% endif %}
+
+    {% if sidebar.address %}
+    <li class="address"><i class="fas fa-map-marked-alt"></i>
+        <a href="{{ sidebar.address.link }}">{{ sidebar.address.text }}</a>
     </li>
     {% endif %}
 

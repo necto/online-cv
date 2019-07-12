@@ -149,7 +149,7 @@ projects:
       page for more.
     assignments:
       - title: Vigor
-        link: "vignat.github.io"
+        link: "https://vignat.github.io"
         tagline: "An automatic formal verification framework for software [network functions](https://www.sdxcentral.com/term/network-function/)"
 
       - title: mipt-vis

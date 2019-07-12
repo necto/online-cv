@@ -15,6 +15,9 @@ sidebar:
     email:
       user: arseniy.zaostrovnykh
       domain: epfl.ch
+    cv:
+      short: assets/documents/CV/arseniy-zaostrovnykh-cv-short.pdf
+      long: assets/documents/CV/arseniy-zaostrovnykh-cv.pdf
     address:
       text: INN 331, Station 14, 1015 Lausanne, EPFL, Switzerland
       link: https://plan.epfl.ch/?room==INN%20331

@@ -18,6 +18,12 @@
     </li>
     {% endif %}
 
+    {% if sidebar.address %}
+    <li class="address"><i class="fas fa-map-marked-alt"></i>
+        <a href="{{ sidebar.address.link }}">{{ sidebar.address.text }}</a>
+    </li>
+    {% endif %}
+
     {% if sidebar.website %}
     <li class="website"><i class="fas fa-globe-americas"></i>
       <a href="http://{{ sidebar.website }}" target="_blank">{{ sidebar.website }}</a>

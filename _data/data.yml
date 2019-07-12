@@ -13,8 +13,11 @@ sidebar:
 
     # Sidebar links
     email:
-        user: arseniy.zaostrovnykh
-        domain: epfl.ch
+      user: arseniy.zaostrovnykh
+      domain: epfl.ch
+    address:
+      text: INN 331, IC, EPFL, Switzerland
+      link: https://plan.epfl.ch/?room==INN%20331
     #phone: 012 345 6789
     #website: necto.github.com
     #linkedin: alandoe

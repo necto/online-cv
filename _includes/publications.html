@@ -42,6 +42,9 @@
           {% if publication.code %}
             <a href="{{ publication.code }}" title="Code"><i class="fas fa-code"></i></a>
           {% endif %}
+          {% if publication.link %}
+            <a href="{{ publication.link}}" title="Website"><i class="fas fa-globe-africa"></i></a>
+          {% endif %}
           </small>
       </div>
       <div class="publication-abstract collapse" id="abstractCollapse{{forloop.index}}" class="collapse" aria-labelledby="heading{{forloop.index}}">

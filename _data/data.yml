@@ -181,19 +181,19 @@ publications:
 
     papers:
       - title: "A formally verified NAT"
-        authors: Arseniy Zaostrovnykh, Solal Pirelli, Luis Pedrosa, Katerina Argyraki, George Candea
+        authors: <u>Arseniy Zaostrovnykh</u>, Solal Pirelli, Luis Pedrosa, Katerina Argyraki, George Candea
         conference: "ACM SIGCOMM, 2017"
 
       - title: "Automated synthesis of adversarial workloads for network functions"
-        authors: Luis Pedrosa, Rishabh Iyer, Arseniy Zaostrovnykh, Jonas Fietz, Katerina Argyraki
+        authors: Luis Pedrosa, Rishabh Iyer, <u>Arseniy Zaostrovnykh</u>, Jonas Fietz, Katerina Argyraki
         conference: "ACM SIGCOMM, 2018"
 
       - title: "A formally verified NAT stack"
-        authors: Solal Pirelli, Arseniy Zaostrovnykh, George Candea
+        authors: Solal Pirelli, <u>Arseniy Zaostrovnykh</u>, George Candea
         conference: "ACM SIGCOMM, Workshop on Kernel Bypassing Networks, 2018"
 
       - title: "Performance contracts for software network functions"
-        authors: Rishabh Iyer, Luis Pedrosa, Arseniy Zaostrovnykh, Solal Pirelli, Katerina Argyraki, George Candea
+        authors: Rishabh Iyer, Luis Pedrosa, <u>Arseniy Zaostrovnykh</u>, Solal Pirelli, Katerina Argyraki, George Candea
         conference: "USENIX NSDI, 2019"
 
 skills:

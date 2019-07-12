@@ -176,20 +176,103 @@ publications:
 
     papers:
       - title: "A formally verified NAT"
+        pdf: https://vignat.github.io/vignat-paper.pdf
+        slides: http://conferences.sigcomm.org/sigcomm/2017/files/program/ts-4-1-VigNAT.pdf
+        video: https://pedrosa.2y.net/Publications/vignat.mp4
+        code: https://github.com/vignat/vignat
+        poster: assets/documents/Vigor-EDICOH19-poster.pdf
+        conflink: http://conferences.sigcomm.org/sigcomm/2017/program.html
+        link: https://vignat.github.io
         authors: <u>Arseniy Zaostrovnykh</u>, Solal Pirelli, Luis Pedrosa, Katerina Argyraki, George Candea
-        conference: "ACM SIGCOMM, 2017"
+        conference: "ACM SIGCOMM"
+        year: 2017
+        abstract: |
+          We present a Network Address Translator (NAT) written in C and proven to be semantically correct according to RFC 3022, as well as crash-free and memory-safe.
+          There exists a lot of recent work on network verification,
+          but it mostly assumes models of network functions and proves properties specific to network configuration, such as reachability and absence of loops.
+
+          Our proof applies directly to the C code of a network function,
+          and it demonstrates the absence of implementation bugs.
+          Prior work argued that this is not feasible
+          (i.e., that verifying a real, stateful network function written in C does not scale) but we demonstrate otherwise:
+          NAT is one of the most popular network functions and maintains per-flow state that needs to be properly updated and expired,
+          which is a typical source of verification challenges.
+          We tackle the scalability challenge with a new combination of symbolic execution and proof checking using separation logic;
+          this combination matches well the typical structure of a network function.
+          We then demonstrate that formally proven correctness in this case does not come at the cost of performance
 
       - title: "Automated synthesis of adversarial workloads for network functions"
+        pdf: https://pedrosa.2y.net/Publications/castan.pdf
+        slides: http://conferences.sigcomm.org/sigcomm/2018/files/slides/paper_7.2.pdf
+        video: https://pedrosa.2y.net/Publications/castan-sigcomm-talk.mp4
+        code: https://github.com/nal-epfl/castan
+        poster: https://pedrosa.2y.net/Projects/CASTAN/Poster.png
+        conflink: http://conferences.sigcomm.org/sigcomm/2018/program.html
+        link: https://pedrosa.2y.net/Projects/CASTAN
         authors: Luis Pedrosa, Rishabh Iyer, <u>Arseniy Zaostrovnykh</u>, Jonas Fietz, Katerina Argyraki
-        conference: "ACM SIGCOMM, 2018"
+        conference: "ACM SIGCOMM"
+        year: 2018
+        abstract: |
+          Software network functions promise to simplify the deployment of network services and reduce network operation cost. However,
+          they face the challenge of unpredictable performance.
+          Given this performance variability,
+          it is imperative that during deployment,
+          network operators consider the performance of the NF not only for typical but also adversarial workloads.
+          
+          We contribute a tool that helps solve this challenge:
+          it takes as input the LLVM code of a network function and outputs packet sequences that trigger slow execution paths.
+          Under the covers,
+          it combines directed symbolic execution with a sophisticated cache model to look for execution paths that incur many CPU cycles and involve adversarial memory-access patterns.
+          We used our tool on 11 network functions that implement a variety of data structures and discovered workloads that can in some cases triple latency and cut throughput by 19% relative to typical testing workloads.
 
       - title: "A formally verified NAT stack"
+        pdf: http://dslab.epfl.ch/pubs/formally-verified-nat-stack.pdf
+        slides: http://conferences.sigcomm.org/sigcomm/2018/files/slides/kbnet/paper_1.2.pptx 
+        video: https://www.youtube.com/watch?v=esfwD46f2ZI&feature=youtu.be
+        code: https://github.com/vignat/vignat/tree/kbnets18
+        poster: assets/documents/VigNATStack-EDICOH18-poster.pdf
+        conflink: http://conferences.sigcomm.org/sigcomm/2018/workshop-kbnets.html
+        link: https://vignat.github.io
         authors: Solal Pirelli, <u>Arseniy Zaostrovnykh</u>, George Candea
-        conference: "ACM SIGCOMM, KBNets (<b>Best Paper Award</b>), 2018"
+        conference: "ACM SIGCOMM, KBNets (<b>Best Paper Award</b>)"
+        year: 2018
+        abstract: |
+          Prior  work  proved  a  stateful  NAT  network  function  to  be semantically  correct,
+          crash-free,  and memory  safe [[29]](https://vignat.github.io).
+          Their toolchain  verifies the  network  function  code  while  assuming the  underlying  kernel-bypass  framework,
+          drivers,  operating system, and hardware to be correct.
+          We extend the toolchain to verify  the  kernel-bypass  framework  and  a  NIC  driver  in  the context of the NAT.
+          We uncover bugs in both the framework and the driver.
 
       - title: "Performance contracts for software network functions"
+        pdf: http://dslab.epfl.ch/pubs/bolt.pdf
+        slides: https://www.usenix.org/sites/default/files/conference/protected-files/nsdi19_slides_iyer.pdf
+        video: https://www.youtube.com/watch?v=cV8pCGiTxgQ
+        code: https://github.com/bolt-perf-contracts/bolt
+        poster: https://pedrosa.2y.net/Projects/Bolt/Poster.png
+        conflink: https://www.usenix.org/conference/nsdi19/technical-sessions
+        link: https://pedrosa.2y.net/Projects/Bolt
         authors: Rishabh Iyer, Luis Pedrosa, <u>Arseniy Zaostrovnykh</u>, Solal Pirelli, Katerina Argyraki, George Candea
-        conference: "USENIX NSDI, 2019"
+        conference: "USENIX NSDI"
+        year: 2019
+        abstract: |
+          Software network functions (NFs), or milddleboxes,
+          promise flexibility and easy deployment of network services,
+          but face the serious challenge of unexpected performance behaviour.
+          We propose the notion of a _performance contract_,
+          a construct formulated in terms of _performance critical variables_,
+          that provides a precise description of NF performance.
+          Performance contracts enable fine-grained prediction and scrutiny of NF performance for arbitrary workloads,
+          without having to run the NF itself.
+
+          We describe Bolt, a technique and tool for computing such performance contracts for the entire software stack of NFs written in C,
+          including the core NF logic, DPDK packet processing framework, and NIC driver.
+          Bolt takes as input the NF implementation code and outputs the corresponding contract.
+          Under the covers, it combines pre-analysis of a library of stateful NF data structures with automated symbolic execution of the NF's code.
+          We evaluate Bolt on four NFs - a Maglev-like load balancer,
+          a NAT, an LPM router, and a MAC bridge -
+          and show that its performance contracts predict the dynamic instruction count and memory access count with a maximum gap of 7% between the real execution and the conservatively predicted upper bound.
+          With further engineering, this gap can drop to 0.
 
 skills:
     title: Skills &amp; Proficiency

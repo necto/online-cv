@@ -1,0 +1,18 @@
+{% assign bio = site.data.data.bio %}
+{% if bio %}
+<section class="section bio-section">
+
+    <h2 class="section-title">
+        <span class="fa-stack fa-xs">
+            <i class="fas fa-circle fa-stack-2x"></i>
+            <i class="fas fa-history fa-stack-1x fa-inverse"></i>
+        </span>
+        {{ bio.title }}
+    </h2>
+
+    <div class="summary">
+        {{ bio.summary | markdownify }}
+    </div>
+
+</section><!--//section-->
+{% endif %}

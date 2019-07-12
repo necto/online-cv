@@ -75,6 +75,7 @@ education:
         Department of Radioelectronics and Cybernetics.
         During the studies I read lectures and lead practical groups in compiler construction
         for juniour students.
+
         Honors degree, top 1% of the class.
 
     - degree: BSc in Applied Physics and Mathematics
@@ -214,6 +215,21 @@ skills:
 
       - name: Vi
         level: 5%
+
+bio:
+  title: Biography
+  summary: |
+    Arseniy Zaostrovnykh is a fifth-year PhD student at [Network Architecture Laboratory](https://nal.epfl.ch)
+    and [Dependable System Laboratory](https://dslab.epfl.ch)
+    at the École polytechnique fédérale de Lausanne ([EPFL](https://epfl.ch)),
+    working under the supervision of Prof. [Katerina Argyraki](https://people.epfl.ch/katerina.argyraki)
+    Prof. [George Candea](https://dslab.epfl.ch/people/candea/).
+    He is interested in dependability of computer systems, formal methods,
+    working on how to make formal methods practical.
+    Arseniy earned his MSc(2014) and BSc(2016) in [Moscow Institute of Physics and Technology](https://mipt.ru/english/).
+    He has interned at Intel and Google, and worked as a software Engineer at
+    the [Samsung Research Institute (SRI)](https://research.samsung.com/srr) and Intel and as a junior researcher
+    at the [Institute of Electronic Control Computers](http://www.ineum.ru/) in Moscow.
 
 footer: >
     Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>

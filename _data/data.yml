@@ -60,10 +60,10 @@ sidebar:
         link:
 
 career-profile:
-    title: Career Profile
+    #title: Career Profile
     summary: |
-      I am a doctoral student in [DSLAB](dslab.epfl.ch) and [NAL](nal.epfl.ch)
-      at [EPFL](epfl.ch). I lead the [Vigor](vigor.github.com) project, that makes it
+      I am a doctoral student in [DSLAB](https://dslab.epfl.ch) and [NAL](https://nal.epfl.ch)
+      at [EPFL](epfl.ch). I lead the [Vigor](https://vigor.github.com) project, that makes it
       possible to apply formal verification to real application for common software
       developers.
 
@@ -91,7 +91,7 @@ experiences:
       time: Sep 2014 - Present
       company: EPFL, Lausanne, VD Switzerland
       details: |
-        I lead the [Vigor](vignat.github.io) project that enables regular developers
+        I lead the [Vigor](https://vignat.github.io) project that enables regular developers
         of software network functions to apply formal verification
         to their applications.
         A core team of 6 people (doctoral students, professors and a postdoc)
@@ -103,8 +103,8 @@ experiences:
         application development.
         My advisors:
 
-         - Prof. [Katerina Argyraki](people.epfl.ch/katerina.argyraki)
-         - Prof. [George Candea](dslab.epfl.ch/people/candea/)
+         - Prof. [Katerina Argyraki](https://people.epfl.ch/katerina.argyraki)
+         - Prof. [George Candea](https://dslab.epfl.ch/people/candea/)
 
       #TODO: update if the Vigor gets published
 
@@ -147,7 +147,7 @@ experiences:
 projects:
     title: Projects
     intro: >
-      Here are some of my side and study projects. Visit my [GitHub](github.com/necto)
+      Here are some of my side and study projects. Visit my [GitHub](https://github.com/necto)
       page for more.
     assignments:
       - title: Vigor

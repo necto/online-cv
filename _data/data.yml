@@ -167,11 +167,11 @@ projects:
 
       - title: A 3D tank shooter
         link: "#"
-        tagline: "As side project for my school years,
+        tagline: "As side project during my school years,
         I enjoyed playing with 3d graphic rendering using open GL,
         and simulating solid body dynamics based on the first principles.
         The result was a tank-duel game with customizable terrain realistic physics
-        with the from-the-scratch game engine."
+        with a home grown game engine."
 
 publications:
     title: Publications

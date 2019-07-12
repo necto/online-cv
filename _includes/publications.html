@@ -20,7 +20,7 @@
   <div class="item">
       <div class="publication-title" id="heading{{forloop.index}}">
           {% if publication.abstract %}
-          <span class="collapsed" data-toggle="collapse" data-target="#abstractCollapse{{forloop.index}}" aria-expanded="false" aria-controls="collapse{{forloop.index}}">
+          <span class="collapsed" title="Click to see the abstract" data-toggle="collapse" data-target="#abstractCollapse{{forloop.index}}" aria-expanded="false" aria-controls="collapse{{forloop.index}}">
               {{ publication.title }}
             </span>
           {% else %}

@@ -7,6 +7,10 @@
 @import "skins/{{ site.theme_skin | default: 'blue' }}"; // skin
 @import "default"; // main partials
 
+.collapsed {
+    border-bottom: 2px dotted;
+}
+
 .sidebar-wrapper {
     width: 300px;
 }

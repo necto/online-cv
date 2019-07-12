@@ -251,7 +251,7 @@ publications:
         code: https://github.com/bolt-perf-contracts/bolt
         poster: assets/documents/bolt-poster.png
         conflink: https://www.usenix.org/conference/nsdi19/technical-sessions
-        link: https://pedrosa.2y.net/Projects/Bolt
+        link: https://bolt-perf-contracts.github.io/
         authors: Rishabh Iyer, Luis Pedrosa, <u>Arseniy Zaostrovnykh</u>, Solal Pirelli, Katerina Argyraki, George Candea
         conference: "USENIX NSDI"
         year: 2019

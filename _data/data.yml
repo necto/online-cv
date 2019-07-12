@@ -3,198 +3,214 @@
 #
 
 sidebar:
-    about: True # set to False or comment line if you want to remove the "how to use?" in the sidebar
-    education: True # set to False if you want education in main section instead of in sidebar
+    about: False # set to False or comment line if you want to remove the "how to use?" in the sidebar
+    education: False # set to False if you want education in main section instead of in sidebar
 
     # Profile information
-    name: Alan Doe
-    tagline: Full Stack Developer
-    avatar: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+    name: Arseniy Zaostrovnykh 
+    tagline: Computer Scientist
+    avatar: profile.jpg  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
     # Sidebar links
-    email: hello@webjeda.com
-    phone: 012 345 6789
-    website: blog.webjeda.com #do not add http://
-    linkedin: alandoe
-    github: sharu725
-    gitlab:
-    bitbucket:
-    twitter: '@webjeda'
-    stack-overflow: # Number/Username, e.g. 123456/alandoe
-    codewars:
-    goodreads: # Number-Username, e.g. 123456-alandoe
+    email:
+        user: arseniy.zaostrovnykh
+        domain: epfl.ch
+    #phone: 012 345 6789
+    #website: necto.github.com
+    #linkedin: alandoe
+    github: necto 
+    #gitlab:
+    #bitbucket:
+    #twitter: '@webjeda'
+    stack-overflow: 1234026/necto
+    #codewars:
+    #goodreads: # Number-Username, e.g. 123456-alandoe
+    google-scholar: h7fTsTQAAAAJ
 
     languages:
-      - idiom: English
+      - idiom: Russian
         level: Native
 
-      - idiom: French
+      - idiom: English
         level: Professional
 
-      - idiom: Spanish
-        level: Professional
+      - idiom: French
+        level: Casual
+
+      - idiom: German
+        level: Beginner
 
     interests:
-      - item: Climbing
+      - item: Acrobatic rock-n-roll
+        link: rockdancecompany.ch
+
+      - item: Theatrical improvisation
         link:
 
-      - item: Snowboarding
+      - item: Biking, Climbing, Swimming, Parkour
         link:
 
-      - item: Cooking
+      - item: Guitar
         link:
 
 career-profile:
     title: Career Profile
     summary: |
-      Summarise your career here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. You can [download this free resume/CV template here]().
-      Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque
-      penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-      Donec quam felis, ultricies nec, pellentesque eu.
+      I am a doctoral student in [DSLAB](dslab.epfl.ch) and [NAL](nal.epfl.ch)
+      at [EPFL](epfl.ch). I lead the [Vigor](vigor.github.com) project, that makes it
+      possible to apply formal verification to real application for common software
+      developers.
 
-      Second paragraph if required.
+      I am interested most in programming languages, computer systems and formal methods.
 
 education:
-    - degree: MSc in Computer Science
-      university: University of London
-      time: 2011 - 2012
+    - degree: MSc in Applied Physics and Mathematics
+      university: Moscow Institute of Physics and Technology
+      time: 2012 - 2014
       details: |
-        Describe your study here lorem ipsum dolor sit amet, consectetuer
-        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-        sociis natoque penatibus et magnis dis parturient montes, nascetur
-        ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-        pretium quis, sem.
+        I specialized in software engineering and PL systems at the
+        Department of Radioelectronics and Cybernetics.
+        During the studies I read lectures and lead practical groups in compiler construction
+        for juniour students.
+        Honors degree, top 1% of the class.
 
-          - Bullet point
-          - Bullet point
-
-    - degree: BSc in Applied Mathematics
-      university: Bristol University
-      time: 2007 - 2011
+    - degree: BSc in Applied Physics and Mathematics
+      university: Moscow Institute of Physics and Technology
+      time: 2008 - 2012
       details: |
-        Describe your study here lorem ipsum dolor sit amet, consectetuer
-        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-        sociis natoque penatibus et magnis dis parturient montes, nascetur
-        ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-        pretium quis, sem.
-
-          - Bullet point
-          - Bullet point
+        Honors degree, top 1% of the class.
 
 experiences:
-    - role: Lead Developer
-      time: 2015 - Present
-      company: Startup Hubs, San Francisco
+    - role: Research Assistant
+      time: Sep 2014 - Present
+      company: EPFL, Lausanne, VD Switzerland
       details: |
-        Describe your role here lorem ipsum dolor sit amet, consectetuer
-        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-        Cum sociis natoque penatibus et magnis dis parturient montes,
-        nascetur ridiculus mus. Donec quam felis, ultricies nec,
-        pellentesque eu, pretium quis, sem. Nulla consequat massa quis
-        enim. Donec pede justo. Sed ut perspiciatis unde omnis iste natus
-        error sit voluptatem accusantium doloremque laudantium, totam rem
-        aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-        architecto beatae vitae dicta sunt explicabo.
+        I lead the [Vigor](vignat.github.io) project that enables regular developers
+        of software network functions to apply formal verification
+        to their applications.
+        A core team of 6 people (doctoral students, professors and a postdoc)
+        contributes to the project on a permanent basis, and more than
+        10 MS and BS students join for semester or summer internship.
 
-          - Bullet point
-          - Bullet point
+        As part of the job, I coach student teams (4-7 people per team) as
+        they learn applying scrum metodology in their semester project - android
+        application development.
+        My advisors:
 
-    - role: Senior Software Engineer
-      time: 2014 - 2015
-      company: Google, London
+         - Prof. [Katerina Argyraki](people.epfl.ch/katerina.argyraki)
+         - Prof. [George Candea](dslab.epfl.ch/people/candea/)
+
+      #TODO: update if the Vigor gets published
+
+    - role: Software Engineer Intern
+      time: Jun - Aug 2015
+      company: Google, Mountain View, CA USA
       details: |
-        Describe your role here lorem ipsum dolor sit amet, consectetuer
-        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-        Cum sociis natoque penatibus et magnis dis parturient montes,
-        nascetur ridiculus mus. Donec quam felis, ultricies nec,
-        pellentesque eu, pretium quis, sem.
+        Added event tracking for network routing calculation.
+        For the new datacenter network, in order to render performance more transparent
+        in a distributed control plane, I implemented a logging and aggregate analytics system.
 
-          - Bullet point
-          - Bullet point
-
-    - role: UI Developer
-      time: 2012 - 2014
-      company: Amazon, London
+    - role: Software Engineer
+      time: Mar - July 2014
+      company: Samsung Research Institute, Moscow, Russia
       details: |
-        Describe your role here lorem ipsum dolor sit amet, consectetuer
-        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-        Cum sociis natoque penatibus et magnis dis parturient montes,
-        nascetur ridiculus mus. Donec quam felis, ultricies nec,
-        pellentesque eu, pretium quis, sem.
+        Participated in development of an ahead-of-time compiler
+        of the ECMAScript 5.0 (JavaScript) language, for the Samsung
+        Smart TV OS.
 
-          - Bullet point
-          - Bullet point
+    - role: Software Engineer
+      time: May - Nov 2013
+      company: Intel, Moscow, Russia
+      details: |
+        Participated in development of a functional simulator for a new architecture with fine grained concurrency.
+
+    - role: Software Engineer Intern
+      time: Jul 2010 - Apr 2013
+      company: Intel, Moscow, Russia
+      details: |
+        Participated in development of a performance-optimizing binary translator from
+        x86 to a new artchitecture with fine-grained concurrency.
+
+    - role: Junior Researcher
+      time: Summer 2012
+      company: OJS Co. "Institute of Electronic Control Computers", Moscow, Russia
+      details: |
+        Participated in development of a base model of prosthesis limbs.
+
 
 projects:
     title: Projects
     intro: >
-      You can list your side projects or open source libraries in this
-      section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
-
+      Here are some of my side and study projects. Visit my [GitHub](github.com/necto)
+      page for more.
     assignments:
-      - title: Velocity
-        link: "#hook"
-        tagline: "A responsive website template designed to help startups promote, market and sell their products."
+      - title: Vigor
+        link: "vignat.github.io"
+        tagline: "An automatic formal verification framework for software [network functions](https://www.sdxcentral.com/term/network-function/)"
 
-      - title: DevStudio
-        link: "#"
-        tagline: "A responsive website template designed to help web developers/designers market their services."
+      - title: mipt-vis
+        link: "https://github.com/mipt-ilab/mipt-vis"
+        tagline: "A simple graph visualizer with automatic layout calculation implemented with [QT](https://www.qt.io/)"
 
-      - title: Tempo
-        link: "#"
-        tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
+      - title: Natty
+        link: "https://github.com/necto/natty"
+        tagline: "An online music-searching and listening service based on [GWT](http://www.gwtproject.org/)"
 
-      - title: Atom
+      - title: A 3D tank shooter
         link: "#"
-        tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
-
-      - title: Delta
-        link: "#"
-        tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
+        tagline: "As side project for my school years,
+        I enjoyed playing with 3d graphic rendering using open GL,
+        and simulating solid body dynamics based on the first principles.
+        The result was a tank-duel game with customizable terrain realistic physics
+        with the from-the-scratch game engine."
 
 publications:
     title: Publications
     intro: |
-      You can list your publications in this section. Lorem ipsum dolor sit
-      amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
-      bibendum fringilla a eu lectus.
+      For more details on the publications you can visit my
+      [Google Scholar](https://scholar.google.ch/citations?user=h7fTsTQAAAAJ) page.
 
     papers:
-      - title: The Art of Computer Programming
-        authors: Donald E. Knuth
-        conference: Addison-Wesley, 1968
+      - title: "A formally verified NAT"
+        authors: Arseniy Zaostrovnykh, Solal Pirelli, Luis Pedrosa, Katerina Argyraki, George Candea
+        conference: "ACM SIGCOMM, 2017"
 
-      - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
-        authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
-        conference: "Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1st edn. (1999)"
+      - title: "Automated synthesis of adversarial workloads for network functions"
+        authors: Luis Pedrosa, Rishabh Iyer, Arseniy Zaostrovnykh, Jonas Fietz, Katerina Argyraki
+        conference: "ACM SIGCOMM, 2018"
 
-      - title: A syntax directed compiler for Algol 60
-        authors: Edgar T. Irons
-        conference: "Comm. ACM 4 (1961), 51–55"
+      - title: "A formally verified NAT stack"
+        authors: Solal Pirelli, Arseniy Zaostrovnykh, George Candea
+        conference: "ACM SIGCOMM, Workshop on Kernel Bypassing Networks, 2018"
+
+      - title: "Performance contracts for software network functions"
+        authors: Rishabh Iyer, Luis Pedrosa, Arseniy Zaostrovnykh, Solal Pirelli, Katerina Argyraki, George Candea
+        conference: "USENIX NSDI, 2019"
 
 skills:
     title: Skills &amp; Proficiency
 
     toolset:
-      - name: Python & Django
+      - name: C
         level: 98%
 
-      - name: Javascript & jQuery
-        level: 98%
-
-      - name: Angular
-        level: 98%
-
-      - name: HTML5 & CSS
+      - name: OCaml
         level: 95%
 
-      - name: Ruby on Rails
-        level: 85%
+      - name: Scrum
+        level: 90%
 
-      - name: Sketch & Photoshop
-        level: 60%
+      - name: C++
+        level: 80%
+
+      - name: Java/Android
+        level: 70%
+
+      - name: Emacs
+        level: 6%
+
+      - name: Vi
+        level: 5%
 
 footer: >
     Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>

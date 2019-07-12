@@ -48,7 +48,7 @@
           </small>
       </div>
       <div class="publication-abstract collapse" id="abstractCollapse{{forloop.index}}" class="collapse" aria-labelledby="heading{{forloop.index}}">
-          {{ publication.abstract }}
+          {{ publication.abstract | markdownify }}
       </div>
       <div class="publication-authors">{{ publication.authors }}</div>
       <div class="publication-conference">

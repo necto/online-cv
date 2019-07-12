@@ -18,9 +18,43 @@
 
   {% for publication in publications.papers %}
   <div class="item">
-    <div class="publication-title">{{ publication.title }}</div>
-    <div class="publication-authors">{{ publication.authors }}</div>
-    <div class="publication-conference">{{ publication.conference }}</div>
+      <div class="publication-title" id="heading{{forloop.index}}">
+          {% if publication.abstract %}
+          <span class="collapsed" data-toggle="collapse" data-target="#abstractCollapse{{forloop.index}}" aria-expanded="false" aria-controls="collapse{{forloop.index}}">
+              {{ publication.title }}
+            </span>
+          {% else %}
+            {{ publication.title }}
+          {% endif %}
+          <small>
+          {% if publication.pdf %}
+            <a href="{{ publication.pdf }}" title="PDF version"><i class="fas fa-file-pdf"></i></a>
+          {% endif %}
+          {% if publication.slides %}
+            <a href="{{ publication.slides }}" title="Slides"><i class="fas fa-tv"></i></a>
+          {% endif %}
+          {% if publication.poster %}
+            <a href="{{ publication.poster }}" title="Poster"><i class="fas fa-file-image"></i></a>
+          {% endif %}
+          {% if publication.video %}
+            <a href="{{ publication.video }}" title="Video"><i class="fas fa-video"></i></a>
+          {% endif %}
+          {% if publication.code %}
+            <a href="{{ publication.code }}" title="Code"><i class="fas fa-code"></i></a>
+          {% endif %}
+          </small>
+      </div>
+      <div class="publication-abstract collapse" id="abstractCollapse{{forloop.index}}" class="collapse" aria-labelledby="heading{{forloop.index}}">
+          {{ publication.abstract }}
+      </div>
+      <div class="publication-authors">{{ publication.authors }}</div>
+      <div class="publication-conference">
+        {% if publication.conflink %}
+            <a href="{{publication.conflink}}"> {{ publication.conference }}, {{publication.year}} </a>
+        {% else %}
+            {{ publication.conference }}, {{publication.year}}
+        {% endif %}
+    </div>
   </div><!--//item-->
   {% endfor %}
 

@@ -61,7 +61,7 @@ career-profile:
     summary: |
       I am a doctoral student in [DSLAB](https://dslab.epfl.ch) and [NAL](https://nal.epfl.ch)
       at [EPFL](epfl.ch). I lead the [Vigor](https://vigor.github.com) project, that makes it
-      possible to apply formal verification to real application for common software
+      possible to apply formal verification to real applications for common software
       developers.
 
       I am interested most in programming languages, computer systems and formal methods.
@@ -73,8 +73,8 @@ education:
       details: |
         I specialized in software engineering and PL systems at the
         Department of Radioelectronics and Cybernetics.
-        During the studies I read lectures and lead practical groups in compiler construction
-        for juniour students.
+        During the studies I lectured and lead practical groups in
+        compiler construction class for juniour students.
 
         Honors degree, top 1% of the class.
 
@@ -89,12 +89,12 @@ experiences:
       time: Sep 2014 - Present
       company: EPFL, Lausanne, VD Switzerland
       details: |
-        I lead the [Vigor](https://vignat.github.io) project that enables regular developers
-        of software network functions to apply formal verification
-        to their applications.
+        I lead the [Vigor](https://vignat.github.io) project. It enables regular developers
+        of software [network functions](https://www.sdxcentral.com/term/network-function/)
+        to apply formal verification to their applications.
         A core team of 6 people (doctoral students, professors and a postdoc)
         contributes to the project on a permanent basis, and more than
-        10 MS and BS students join for semester or summer internship.
+        10 MS and BS students join for a semester or summer internship.
 
         As part of the job, I coach student teams (4-7 people per team) as
         they learn applying scrum metodology in their semester project - android
@@ -111,16 +111,16 @@ experiences:
       company: Google, Mountain View, CA USA
       details: |
         Added event tracking for network routing calculation.
-        For the new datacenter network, in order to render performance more transparent
+        For the new Google datacenter network, in order to render performance more transparent
         in a distributed control plane, I implemented a logging and aggregate analytics system.
 
     - role: Software Engineer
       time: Mar - July 2014
       company: Samsung Research Institute, Moscow, Russia
       details: |
-        Participated in development of an ahead-of-time compiler
-        of the ECMAScript 5.0 (JavaScript) language, for the Samsung
-        Smart TV OS.
+        Participated in development of an [AOT](https://en.wikipedia.org/wiki/Ahead-of-time_compilation)
+        of the [ECMAScript 5.0](https://en.wikipedia.org/wiki/ECMAScript#5th_Edition) (JavaScript) language, for the Samsung
+        [Smart TV OS](https://en.wikipedia.org/wiki/Tizen).
 
     - role: Software Engineer
       time: May - Nov 2013

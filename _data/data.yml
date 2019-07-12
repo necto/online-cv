@@ -166,6 +166,15 @@ projects:
         link: "https://github.com/necto/natty"
         tagline: "An online music-searching and listening service based on [GWT](http://www.gwtproject.org/)"
 
+      - title: Runningram
+        link: "https://code.google.com/archive/p/runningram/"
+        tagline: >
+          Started as a second year class project, a 2d isometric arcade game based on SDL.
+          It is based on a home grown 2d physics engine with developed collision detection algorithm,
+          fairl solid body model for the cars and non-isotropic damage model.
+          The game supports scripting in [ECL](https://common-lisp.net/project/ecl/), including bots,
+          and multiplayer on the same-keyboard and across network.
+
       - title: A 3D tank shooter
         link: "#"
         tagline: "As side project during my school years,

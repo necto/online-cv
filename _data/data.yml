@@ -73,8 +73,17 @@ career-profile:
       I am most interested in programming languages, computer systems and formal methods.
 
 education:
+    - degree: PhD student in Computer Science (ongoing)
+      university: École Polytechnique Fédérale de Lausanne (EPFL)
+      time: 2014 - present
+      details: |
+        I make formal software verification practical in the
+        domain of network functions (used in middleboxes).
+
+#        GPA 5.5 out of 6
+
     - degree: MSc in Applied Physics and Mathematics
-      university: Moscow Institute of Physics and Technology
+      university: Moscow Institute of Physics and Technology (MIPT)
       time: 2012 - 2014
       details: |
         I specialized in software engineering and PL systems at the
@@ -85,7 +94,7 @@ education:
         Graduation with honors.
 
     - degree: BSc in Applied Physics and Mathematics
-      university: Moscow Institute of Physics and Technology
+      university: Moscow Institute of Physics and Technology (MIPT)
       time: 2008 - 2012
       details: |
         Graduation with honors, top 1% of the class. GPA **5.0** out of 5
@@ -190,31 +199,35 @@ publications:
       [Google Scholar](https://scholar.google.ch/citations?user=h7fTsTQAAAAJ) page.
 
     papers:
-      - title: "A formally verified NAT"
-        pdf: https://vignat.github.io/vignat-paper.pdf
-        slides: assets/documents/vignat-slides.pdf
-        video: https://pedrosa.2y.net/Publications/vignat.mp4
-        code: https://github.com/vignat/vignat
-        poster: assets/documents/Vigor-EDICOH19-poster.pdf
-        conflink: http://conferences.sigcomm.org/sigcomm/2017/program.html
-        link: https://vignat.github.io
-        authors: <u>Arseniy Zaostrovnykh</u>, Solal Pirelli, Luis Pedrosa, Katerina Argyraki, George Candea
-        conference: "ACM SIGCOMM"
-        year: 2017
+      - title: "Performance contracts for software network functions"
+        pdf: assets/documents/bolt.pdf
+        slides: assets/documents/bolt-slides.pdf
+        video: https://www.youtube.com/watch?v=cV8pCGiTxgQ
+        code: https://github.com/bolt-perf-contracts/bolt
+        poster: assets/documents/bolt-poster.png
+        conflink: https://www.usenix.org/conference/nsdi19/technical-sessions
+        link: https://bolt-perf-contracts.github.io/
+        authors: Rishabh Iyer, Luis Pedrosa, <u>Arseniy Zaostrovnykh</u>, Solal Pirelli, Katerina Argyraki, George Candea
+        conference: "USENIX NSDI"
+        year: 2019
         abstract: |
-          We present a Network Address Translator (NAT) written in C and proven to be semantically correct according to RFC 3022, as well as crash-free and memory-safe.
-          There exists a lot of recent work on network verification,
-          but it mostly assumes models of network functions and proves properties specific to network configuration, such as reachability and absence of loops.
+          Software network functions (NFs), or milddleboxes,
+          promise flexibility and easy deployment of network services,
+          but face the serious challenge of unexpected performance behaviour.
+          We propose the notion of a _performance contract_,
+          a construct formulated in terms of _performance critical variables_,
+          that provides a precise description of NF performance.
+          Performance contracts enable fine-grained prediction and scrutiny of NF performance for arbitrary workloads,
+          without having to run the NF itself.
 
-          Our proof applies directly to the C code of a network function,
-          and it demonstrates the absence of implementation bugs.
-          Prior work argued that this is not feasible
-          (i.e., that verifying a real, stateful network function written in C does not scale) but we demonstrate otherwise:
-          NAT is one of the most popular network functions and maintains per-flow state that needs to be properly updated and expired,
-          which is a typical source of verification challenges.
-          We tackle the scalability challenge with a new combination of symbolic execution and proof checking using separation logic;
-          this combination matches well the typical structure of a network function.
-          We then demonstrate that formally proven correctness in this case does not come at the cost of performance
+          We describe Bolt, a technique and tool for computing such performance contracts for the entire software stack of NFs written in C,
+          including the core NF logic, DPDK packet processing framework, and NIC driver.
+          Bolt takes as input the NF implementation code and outputs the corresponding contract.
+          Under the covers, it combines pre-analysis of a library of stateful NF data structures with automated symbolic execution of the NF's code.
+          We evaluate Bolt on four NFs - a Maglev-like load balancer,
+          a NAT, an LPM router, and a MAC bridge -
+          and show that its performance contracts predict the dynamic instruction count and memory access count with a maximum gap of 7% between the real execution and the conservatively predicted upper bound.
+          With further engineering, this gap can drop to 0.
 
       - title: "Automated synthesis of adversarial workloads for network functions"
         pdf: assets/documents/castan.pdf
@@ -259,35 +272,31 @@ publications:
           We extend the toolchain to verify  the  kernel-bypass  framework  and  a  NIC  driver  in  the context of the NAT.
           We uncover bugs in both the framework and the driver.
 
-      - title: "Performance contracts for software network functions"
-        pdf: assets/documents/bolt.pdf
-        slides: assets/documents/bolt-slides.pdf
-        video: https://www.youtube.com/watch?v=cV8pCGiTxgQ
-        code: https://github.com/bolt-perf-contracts/bolt
-        poster: assets/documents/bolt-poster.png
-        conflink: https://www.usenix.org/conference/nsdi19/technical-sessions
-        link: https://bolt-perf-contracts.github.io/
-        authors: Rishabh Iyer, Luis Pedrosa, <u>Arseniy Zaostrovnykh</u>, Solal Pirelli, Katerina Argyraki, George Candea
-        conference: "USENIX NSDI"
-        year: 2019
+      - title: "A formally verified NAT"
+        pdf: https://vignat.github.io/vignat-paper.pdf
+        slides: assets/documents/vignat-slides.pdf
+        video: https://pedrosa.2y.net/Publications/vignat.mp4
+        code: https://github.com/vignat/vignat
+        poster: assets/documents/Vigor-EDICOH19-poster.pdf
+        conflink: http://conferences.sigcomm.org/sigcomm/2017/program.html
+        link: https://vignat.github.io
+        authors: <u>Arseniy Zaostrovnykh</u>, Solal Pirelli, Luis Pedrosa, Katerina Argyraki, George Candea
+        conference: "ACM SIGCOMM"
+        year: 2017
         abstract: |
-          Software network functions (NFs), or milddleboxes,
-          promise flexibility and easy deployment of network services,
-          but face the serious challenge of unexpected performance behaviour.
-          We propose the notion of a _performance contract_,
-          a construct formulated in terms of _performance critical variables_,
-          that provides a precise description of NF performance.
-          Performance contracts enable fine-grained prediction and scrutiny of NF performance for arbitrary workloads,
-          without having to run the NF itself.
+          We present a Network Address Translator (NAT) written in C and proven to be semantically correct according to RFC 3022, as well as crash-free and memory-safe.
+          There exists a lot of recent work on network verification,
+          but it mostly assumes models of network functions and proves properties specific to network configuration, such as reachability and absence of loops.
 
-          We describe Bolt, a technique and tool for computing such performance contracts for the entire software stack of NFs written in C,
-          including the core NF logic, DPDK packet processing framework, and NIC driver.
-          Bolt takes as input the NF implementation code and outputs the corresponding contract.
-          Under the covers, it combines pre-analysis of a library of stateful NF data structures with automated symbolic execution of the NF's code.
-          We evaluate Bolt on four NFs - a Maglev-like load balancer,
-          a NAT, an LPM router, and a MAC bridge -
-          and show that its performance contracts predict the dynamic instruction count and memory access count with a maximum gap of 7% between the real execution and the conservatively predicted upper bound.
-          With further engineering, this gap can drop to 0.
+          Our proof applies directly to the C code of a network function,
+          and it demonstrates the absence of implementation bugs.
+          Prior work argued that this is not feasible
+          (i.e., that verifying a real, stateful network function written in C does not scale) but we demonstrate otherwise:
+          NAT is one of the most popular network functions and maintains per-flow state that needs to be properly updated and expired,
+          which is a typical source of verification challenges.
+          We tackle the scalability challenge with a new combination of symbolic execution and proof checking using separation logic;
+          this combination matches well the typical structure of a network function.
+          We then demonstrate that formally proven correctness in this case does not come at the cost of performance
 
 skills:
     title: Skills &amp; Proficiency
@@ -320,11 +329,11 @@ bio:
     Arseniy Zaostrovnykh is a fifth-year PhD student at [Network Architecture Laboratory](https://nal.epfl.ch)
     and [Dependable System Laboratory](https://dslab.epfl.ch)
     at the École polytechnique fédérale de Lausanne ([EPFL](https://epfl.ch)),
-    working under the supervision of Prof. [Katerina Argyraki](https://people.epfl.ch/katerina.argyraki)
+    working under the supervision of Prof. [Katerina Argyraki](https://people.epfl.ch/katerina.argyraki) and
     Prof. [George Candea](https://dslab.epfl.ch/people/candea/).
     He is interested in dependability of computer systems, formal methods,
     working on how to make formal methods practical.
-    Arseniy earned his MSc(2014) and BSc(2016) in [Moscow Institute of Physics and Technology](https://mipt.ru/english/).
+    Arseniy earned his MSc(2014) and BSc(2012) in [Moscow Institute of Physics and Technology](https://mipt.ru/english/).
     He has interned at Intel and Google, and worked as a software Engineer at
     the [Samsung Research Institute (SRI)](https://research.samsung.com/srr) and Intel and as a junior researcher
     at the [Institute of Electronic Control Computers](http://www.ineum.ru/) in Moscow.

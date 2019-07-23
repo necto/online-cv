@@ -202,7 +202,7 @@ publications:
     papers:
       - title: "Developing Formally Verified Software Middleboxes with Vigor (accepted)"
         conflink: https://sosp19.rcs.uwaterloo.ca/
-        authors: <u>Arseniy Zaostrovnykh</u>, Rishabh Iyer, Luis Pedrosa, Solal Pirelli, Matteo Rizzo, Katerina Argyraki, George Candea
+        authors: <u>Arseniy Zaostrovnykh</u>, Solal Pirelli, Rishabh Iyer, Luis Pedrosa, Matteo Rizzo, Katerina Argyraki, George Candea
         conference: "ACM SOSP"
         year: 2019
         abstract: |

@@ -227,6 +227,36 @@ publications:
           be memory-safe, and not crash or hang.
           We show that they provide competitive performance.
 
+      - title: "Performance contracts for software network functions"
+        pdf: assets/documents/bolt.pdf
+        slides: assets/documents/bolt-slides.pdf
+        video: https://www.youtube.com/watch?v=cV8pCGiTxgQ
+        code: https://github.com/bolt-perf-contracts/bolt
+        poster: assets/documents/bolt-poster.png
+        conflink: https://www.usenix.org/conference/nsdi19/technical-sessions
+        link: https://bolt-perf-contracts.github.io/
+        authors: Rishabh Iyer, Luis Pedrosa, <u>Arseniy Zaostrovnykh</u>, Solal Pirelli, Katerina Argyraki, George Candea
+        conference: "USENIX NSDI"
+        year: 2019
+        abstract: |
+          Software network functions (NFs), or milddleboxes,
+          promise flexibility and easy deployment of network services,
+          but face the serious challenge of unexpected performance behaviour.
+          We propose the notion of a _performance contract_,
+          a construct formulated in terms of _performance critical variables_,
+          that provides a precise description of NF performance.
+          Performance contracts enable fine-grained prediction and scrutiny of NF performance for arbitrary workloads,
+          without having to run the NF itself.
+
+          We describe Bolt, a technique and tool for computing such performance contracts for the entire software stack of NFs written in C,
+          including the core NF logic, DPDK packet processing framework, and NIC driver.
+          Bolt takes as input the NF implementation code and outputs the corresponding contract.
+          Under the covers, it combines pre-analysis of a library of stateful NF data structures with automated symbolic execution of the NF's code.
+          We evaluate Bolt on four NFs - a Maglev-like load balancer,
+          a NAT, an LPM router, and a MAC bridge -
+          and show that its performance contracts predict the dynamic instruction count and memory access count with a maximum gap of 7% between the real execution and the conservatively predicted upper bound.
+          With further engineering, this gap can drop to 0.
+
       - title: "Automated synthesis of adversarial workloads for network functions"
         pdf: assets/documents/castan.pdf
         slides: assets/documents/castan-slides.pdf

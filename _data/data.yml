@@ -186,11 +186,12 @@ projects:
 
       - title: A 3D tank shooter
         link: "#"
-        tagline: "As side project during my school years,
-        I enjoyed playing with 3d graphic rendering using open GL,
-        and simulating solid body dynamics based on the first principles.
-        The result was a tank-duel game with customizable terrain realistic physics
-        with a home grown game engine."
+        tagline: >
+          As side project during my school years,
+          I enjoyed playing with 3d graphic rendering using open GL,
+          and simulating solid body dynamics based on the first principles.
+          The result was a tank-duel game with customizable terrain realistic physics
+          with a home grown game engine.
 
 publications:
     title: Publications
@@ -199,35 +200,32 @@ publications:
       [Google Scholar](https://scholar.google.ch/citations?user=h7fTsTQAAAAJ) page.
 
     papers:
-      - title: "Performance contracts for software network functions"
-        pdf: assets/documents/bolt.pdf
-        slides: assets/documents/bolt-slides.pdf
-        video: https://www.youtube.com/watch?v=cV8pCGiTxgQ
-        code: https://github.com/bolt-perf-contracts/bolt
-        poster: assets/documents/bolt-poster.png
-        conflink: https://www.usenix.org/conference/nsdi19/technical-sessions
-        link: https://bolt-perf-contracts.github.io/
-        authors: Rishabh Iyer, Luis Pedrosa, <u>Arseniy Zaostrovnykh</u>, Solal Pirelli, Katerina Argyraki, George Candea
-        conference: "USENIX NSDI"
+      - title: "Developing Formally Verified Software Middleboxes with Vigor (accepted)"
+        conflink: https://sosp19.rcs.uwaterloo.ca/
+        authors: <u>Arseniy Zaostrovnykh</u>, Rishabh Iyer, Luis Pedrosa, Solal Pirelli, Matteo Rizzo, Katerina Argyraki, George Candea
+        conference: "ACM SOSP"
         year: 2019
         abstract: |
-          Software network functions (NFs), or milddleboxes,
-          promise flexibility and easy deployment of network services,
-          but face the serious challenge of unexpected performance behaviour.
-          We propose the notion of a _performance contract_,
-          a construct formulated in terms of _performance critical variables_,
-          that provides a precise description of NF performance.
-          Performance contracts enable fine-grained prediction and scrutiny of NF performance for arbitrary workloads,
-          without having to run the NF itself.
+          We present the design and implementation of Vigor,
+          a software stack and toolchain for building and running software middleboxes that are guaranteed to be correct,
+          while providing competitive performance and preserving developer productivity.
+          With Vigor, developers write the middlebox code (i.e., the software network function, or NF) in C atop a standard packet-processing framework,
+          putting persistent state in data structures from a Vigor-provided library.
+          Vigor then automatically verifies that the resulting software stack correctly implements a specification (written in Python).
 
-          We describe Bolt, a technique and tool for computing such performance contracts for the entire software stack of NFs written in C,
-          including the core NF logic, DPDK packet processing framework, and NIC driver.
-          Bolt takes as input the NF implementation code and outputs the corresponding contract.
-          Under the covers, it combines pre-analysis of a library of stateful NF data structures with automated symbolic execution of the NF's code.
-          We evaluate Bolt on four NFs - a Maglev-like load balancer,
-          a NAT, an LPM router, and a MAC bridge -
-          and show that its performance contracts predict the dynamic instruction count and memory access count with a maximum gap of 7% between the real execution and the conservatively predicted upper bound.
-          With further engineering, this gap can drop to 0.
+          Vigor has three points of novelty:
+          NF developers need no verification expertise,
+          and the verification process does not require their assistance (push-button verification);
+          the entire software stack is verified, down to the hardware (full-stack verification);
+          and verification can be done in a pay-as-you-go manner,
+          i.e., instead of investing upfront a lot of time in writing and verifying a complete specification,
+          one can specify one-off properties in a few lines of Python and verify them without concern for the rest.
+          
+          We present five NFs written using Vigor —
+          a NAT, a Maglev load balancer, a learning bridge, a firewall, and a traffic policer —
+          that are guaranteed to satisfy standard RFC-derived specifications,
+          be memory-safe, and not crash or hang.
+          We show that they provide competitive performance.
 
       - title: "Automated synthesis of adversarial workloads for network functions"
         pdf: assets/documents/castan.pdf

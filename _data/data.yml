@@ -70,7 +70,7 @@ career-profile:
       possible to apply formal verification to real applications for common software
       developers.
 
-      I am most interested in programming languages, computer systems and formal methods.
+      I am most interested in programming languages, code transformation, computer systems, and formal methods.
 
 education:
     - degree: PhD student in Computer Science (ongoing)
@@ -88,8 +88,8 @@ education:
       details: |
         I specialized in software engineering and PL systems at the
         Department of Radioelectronics and Cybernetics.
-        During the studies I lectured and lead practical groups in
-        compiler construction class for juniour students.
+        During the studies, I lectured and lead practical groups in
+        compiler construction class for junior students.
 
         Graduation with honors.
 
@@ -112,7 +112,7 @@ experiences:
         10 MS and BS students join for a semester or summer internship.
 
         As part of the job, I coach student teams (4-7 people per team) as
-        they learn applying scrum metodology in their semester project - android
+        they learn to apply scrum methodology in their semester project - android
         application development.
         My advisors:
 
@@ -133,28 +133,22 @@ experiences:
       time: Mar - July 2014
       company: Samsung Research Institute, Moscow, Russia
       details: |
-        Participated in development of an [AOT](https://en.wikipedia.org/wiki/Ahead-of-time_compilation)
+        Development of an [AOT](https://en.wikipedia.org/wiki/Ahead-of-time_compilation)
         of the [ECMAScript 5.0](https://en.wikipedia.org/wiki/ECMAScript#5th_Edition) (JavaScript) language, for the Samsung
         [Smart TV OS](https://en.wikipedia.org/wiki/Tizen).
 
     - role: Software Engineer
-      time: May - Nov 2013
+      time: Jul 2010 - Nov 2013
       company: Intel, Moscow, Russia
       details: |
-        Participated in development of a functional simulator for a new architecture with fine grained concurrency.
-
-    - role: Software Engineer Intern
-      time: Jul 2010 - Apr 2013
-      company: Intel, Moscow, Russia
-      details: |
-        Participated in development of a performance-optimizing binary translator from
-        x86 to a new artchitecture with fine-grained concurrency.
+        - Development of a performance-optimizing binary translator from x86 to a new architecture with fine-grained concurrency.
+        - Development of a functional simulator for a new architecture with fine-grained concurrency.
 
     - role: Junior Researcher
       time: Summer 2012
       company: OJS Co. "Institute of Electronic Control Computers", Moscow, Russia
       details: |
-        Participated in development of a base model of prosthesis limbs.
+        Participated in the development of a base model of prosthesis limbs.
 
 
 projects:
@@ -178,20 +172,20 @@ projects:
       - title: Runningram
         link: "https://code.google.com/archive/p/runningram/"
         tagline: >
-          Started as a second year class project, a 2d isometric arcade game based on SDL.
-          It is based on a home grown 2d physics engine with developed collision detection algorithm,
-          fairl solid body model for the cars and non-isotropic damage model.
+          Started as a second-year class project, a 2d isometric arcade game based on SDL.
+          It is based on a home-grown 2d physics engine with developed collision detection algorithm,
+          fairly solid body model for the cars and non-isotropic damage model.
           The game supports scripting in [ECL](https://common-lisp.net/project/ecl/), including bots,
-          and multiplayer on the same-keyboard and across network.
+          and multiplayer on the same-keyboard and across the network.
 
       - title: A 3D tank shooter
         link: "#"
         tagline: >
-          As side project during my school years,
+          As a side project during my school years,
           I enjoyed playing with 3d graphic rendering using open GL,
           and simulating solid body dynamics based on the first principles.
           The result was a tank-duel game with customizable terrain realistic physics
-          with a home grown game engine.
+          with a home-grown game engine.
 
 publications:
     title: Publications

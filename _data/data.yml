@@ -104,7 +104,7 @@ experiences:
       time: Sep 2014 - Present
       company: EPFL, Lausanne, VD Switzerland
       details: |
-        I lead the [Vigor](https://vignat.github.io) project. It enables regular developers
+        I lead the [Vigor](https://vigor-nf.github.io) project. It enables regular developers
         of software [network functions](https://www.sdxcentral.com/term/network-function/)
         to apply formal verification to their applications.
         A core team of 6 people (doctoral students, professors and a postdoc)
@@ -158,7 +158,7 @@ projects:
       page for more.
     assignments:
       - title: Vigor
-        link: "https://vignat.github.io"
+        link: "https://vigor-nf.github.io"
         tagline: "An automatic formal verification framework for software [network functions](https://www.sdxcentral.com/term/network-function/)"
 
       - title: mipt-vis

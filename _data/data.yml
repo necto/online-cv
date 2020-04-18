@@ -227,7 +227,7 @@ publications:
           are memory-safe, and do not crash or hang.
           We show that they provide competitive performance.
 
-      - title: "Performance contracts for software network functions"
+      - title: "Performance Contracts for Software Network Functions"
         pdf: assets/documents/bolt.pdf
         slides: assets/documents/bolt-slides.pdf
         video: https://www.youtube.com/watch?v=cV8pCGiTxgQ
@@ -257,7 +257,7 @@ publications:
           and show that its performance contracts predict the dynamic instruction count and memory access count with a maximum gap of 7% between the real execution and the conservatively predicted upper bound.
           With further engineering, this gap can drop to 0.
 
-      - title: "Automated synthesis of adversarial workloads for network functions"
+      - title: "Automated Synthesis of Adversarial Workloads for Network Functions"
         pdf: assets/documents/castan.pdf
         slides: assets/documents/castan-slides.pdf
         video: https://pedrosa.2y.net/Publications/castan-sigcomm-talk.mp4
@@ -281,7 +281,7 @@ publications:
           it combines directed symbolic execution with a sophisticated cache model to look for execution paths that incur many CPU cycles and involve adversarial memory-access patterns.
           We used our tool on 11 network functions that implement a variety of data structures and discovered workloads that can in some cases triple latency and cut throughput by 19% relative to typical testing workloads.
 
-      - title: "A formally verified NAT stack"
+      - title: "A Formally Verified NAT Stack"
         pdf: assets/documents/formally-verified-nat-stack.pdf
         slides: assets/documents/formally-verified-nat-stack-slides.pptx
         video: https://www.youtube.com/watch?v=esfwD46f2ZI&feature=youtu.be
@@ -300,7 +300,7 @@ publications:
           We extend the toolchain to verify  the  kernel-bypass  framework  and  a  NIC  driver  in  the context of the NAT.
           We uncover bugs in both the framework and the driver.
 
-      - title: "A formally verified NAT"
+      - title: "A Formally Verified NAT"
         pdf: https://vignat.github.io/vignat-paper.pdf
         slides: assets/documents/vignat-slides.pdf
         video: https://pedrosa.2y.net/Publications/vignat.mp4

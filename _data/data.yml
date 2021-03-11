@@ -70,7 +70,7 @@ career-profile:
       computer systems, and formal methods.
 
 education:
-    - degree: PhD student in Computer Science
+    - degree: Ph.D. in Computer Science
       university: École Polytechnique Fédérale de Lausanne (EPFL)
       time: 2014 - 2020
       details: |
@@ -196,10 +196,10 @@ publications:
       [Google Scholar](https://scholar.google.ch/citations?user=h7fTsTQAAAAJ) page.
 
     papers:
-      - title: "Verifying Software Network Functions with No Verification Expertise (PhD Dissertation)"
+      - title: "Verifying Software Network Functions with No Verification Expertise"
         pdf: https://infoscience.epfl.ch/record/280223/files/EPFL_TH10169.pdf
         authors: <u>Arseniy Zaostrovnykh</u>
-        conference: "EPFL"
+        conference: "EPFL (Ph.D. Dissertation)"
         year: 2020
 
       - title: "Verifying Software Network Functions with No Verification Expertise"

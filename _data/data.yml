@@ -63,7 +63,7 @@ career-profile:
     #title: Career Profile
     summary: |
       I am a static analysis enthusiast at [SonarSource](https://sonarsource.com),
-      one of developers of the [analysis](https://docs.sonarqube.org/latest/analysis/languages/cfamily/)
+      one of developers of the [analysis engine](https://docs.sonarqube.org/latest/analysis/languages/cfamily/)
       for the various editions of C++.
 
       I am most interested in programming languages, code analysis and transformation,
@@ -199,6 +199,7 @@ publications:
       - title: "Verifying Software Network Functions with No Verification Expertise (PhD Dissertation)"
         pdf: https://infoscience.epfl.ch/record/280223/files/EPFL_TH10169.pdf
         authors: <u>Arseniy Zaostrovnykh</u>
+        conference: "EPFL"
         year: 2020
 
       - title: "Verifying Software Network Functions with No Verification Expertise"

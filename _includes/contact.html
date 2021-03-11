@@ -6,8 +6,8 @@
         <script language="JavaScript">
             user = "{{sidebar.email.user}}";
             site = "{{sidebar.email.domain}}";
-            document.write('<a href=\"mailto:' + user + '@' + site + '\">');
-            document.write(user + '@' + site + '</a>');
+            document.write('<small><a href=\"mailto:' + user + '@' + site + '\">');
+            document.write(user + '@' + site + '</a></small>');
         </script>
     </li>
     {% endif %}

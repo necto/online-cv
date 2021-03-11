@@ -197,7 +197,7 @@ publications:
 
     papers:
       - title: "Verifying Software Network Functions with No Verification Expertise"
-        pdf: https://infoscience.epfl.ch/record/280223/files/EPFL_TH10169.pdf
+        pdf: assets/documents/thesis.pdf
         authors: <u>Arseniy Zaostrovnykh</u>
         conference: "EPFL (Ph.D. Dissertation)"
         year: 2020

@@ -14,13 +14,10 @@ sidebar:
     # Sidebar links
     email:
       user: arseniy.zaostrovnykh
-      domain: epfl.ch
+      domain: sonarsource.com
     cv:
       short: assets/documents/CV/arseniy-zaostrovnykh-cv-short.pdf
       long: assets/documents/CV/arseniy-zaostrovnykh-cv.pdf
-    address:
-      text: INN 331, Station 14, 1015 Lausanne, EPFL, Switzerland
-      link: https://plan.epfl.ch/?room==INN%20331
     #phone: 012 345 6789
     website: necto.github.com
     linkedin: necto
@@ -65,19 +62,19 @@ sidebar:
 career-profile:
     #title: Career Profile
     summary: |
-      I am a doctoral student in [DSLAB](https://dslab.epfl.ch) and [NAL](https://nal.epfl.ch)
-      at [EPFL](epfl.ch). I lead the [Vigor](https://vigor.github.com) project, that makes it
-      possible to apply formal verification to real applications for common software
-      developers.
+      I am a static analysis enthusiast at [SonarSource](https://sonarsource.com),
+      one of developers of the [analysis](https://docs.sonarqube.org/latest/analysis/languages/cfamily/)
+      for the various editions of C++.
 
-      I am most interested in programming languages, code transformation, computer systems, and formal methods.
+      I am most interested in programming languages, code analysis and transformation,
+      computer systems, and formal methods.
 
 education:
-    - degree: PhD student in Computer Science (ongoing)
+    - degree: PhD student in Computer Science
       university: École Polytechnique Fédérale de Lausanne (EPFL)
-      time: 2014 - present
+      time: 2014 - 2020
       details: |
-        I make formal software verification practical in the
+        I made formal software verification practical in the
         domain of network functions (used in middleboxes).
 
 #        GPA 5.5 out of 6
@@ -100,26 +97,31 @@ education:
         Graduation with honors, top 1% of the class. GPA **5.0** out of 5
 
 experiences:
+    - role: Developer
+      time: Sep 2020 - Present
+      company: SonarSource
+      details: |
+        I participate in static-analysis development for C, C++, and Objective-C languages
+        using the Clang AST and LLVM IR, as well as Clang Static Analyzer.
+
     - role: Research Assistant
-      time: Sep 2014 - Present
+      time: Sep 2014 - Sep 2020
       company: EPFL, Lausanne, VD Switzerland
       details: |
-        I lead the [Vigor](https://vigor-nf.github.io) project. It enables regular developers
+        I lead the [Vigor](https://vigor.epfl.ch) project. It enables regular developers
         of software [network functions](https://www.sdxcentral.com/term/network-function/)
         to apply formal verification to their applications.
         A core team of 6 people (doctoral students, professors and a postdoc)
-        contributes to the project on a permanent basis, and more than
-        10 MS and BS students join for a semester or summer internship.
+        contributed to the project on a permanent basis, and more than
+        10 MS and BS students joined for semester or summer internships.
 
-        As part of the job, I coach student teams (4-7 people per team) as
-        they learn to apply scrum methodology in their semester project - android
+        As part of the job, I coached student teams (4-7 people per team) as
+        they learned to apply scrum methodology in their semester project - android
         application development.
         My advisors:
 
          - Prof. [Katerina Argyraki](https://people.epfl.ch/katerina.argyraki)
          - Prof. [George Candea](https://dslab.epfl.ch/people/candea/)
-
-      #TODO: update if the Vigor gets published
 
     - role: Software Engineer Intern
       time: Jun - Aug 2015
@@ -158,7 +160,7 @@ projects:
       page for more.
     assignments:
       - title: Vigor
-        link: "https://vigor-nf.github.io"
+        link: "https://vigor.epfl.ch"
         tagline: "An automatic formal verification framework for software [network functions](https://www.sdxcentral.com/term/network-function/)"
 
       - title: mipt-vis
@@ -194,6 +196,11 @@ publications:
       [Google Scholar](https://scholar.google.ch/citations?user=h7fTsTQAAAAJ) page.
 
     papers:
+      - title: "Verifying Software Network Functions with No Verification Expertise (PhD Dissertation)"
+        pdf: https://infoscience.epfl.ch/record/280223/files/EPFL_TH10169.pdf
+        authors: <u>Arseniy Zaostrovnykh</u>
+        year: 2020
+
       - title: "Verifying Software Network Functions with No Verification Expertise"
         pdf: https://vigor-nf.github.io/vigor-paper.pdf
         code: https://github.com/vigor-nf/vigor
@@ -354,15 +361,17 @@ skills:
 bio:
   title: Biography
   summary: |
-    Arseniy Zaostrovnykh is a fifth-year PhD student at [Network Architecture Laboratory](https://nal.epfl.ch)
+    Dr. Arseniy Zaostrovnykh is a static analysis enthusiast
+    working at [SonarSource](https://sonarsource.com) on improving the quality and security of program code.
+    Arseniy Zaostrovnykh graduated from (2020) [Network Architecture Laboratory](https://nal.epfl.ch)
     and [Dependable System Laboratory](https://dslab.epfl.ch)
     at the École polytechnique fédérale de Lausanne ([EPFL](https://epfl.ch)),
     working under the supervision of Prof. [Katerina Argyraki](https://people.epfl.ch/katerina.argyraki) and
     Prof. [George Candea](https://dslab.epfl.ch/people/candea/).
-    He is interested in dependability of computer systems, formal methods,
-    working on how to make formal methods practical.
+    As his doctoral thesis, Arseniy proposed brought formal software verification
+    within the reach of regular software engineers in the domain of software network functions.
     Arseniy earned his MSc(2014) and BSc(2012) in [Moscow Institute of Physics and Technology](https://mipt.ru/english/).
-    He has interned at Intel and Google, and worked as a software Engineer at
+    He has interned at Intel and Google, and worked as a software engineer at
     the [Samsung Research Institute (SRI)](https://research.samsung.com/srr) and Intel and as a junior researcher
     at the [Institute of Electronic Control Computers](http://www.ineum.ru/) in Moscow.
 
